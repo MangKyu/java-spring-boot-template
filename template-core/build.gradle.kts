@@ -9,5 +9,11 @@ tasks {
 }
 
 dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-json")
+    implementation("com.github.ben-manes.caffeine:caffeine")
+
+    implementation("org.springframework.boot:spring-boot-testcontainers")
+    implementation("org.testcontainers:testcontainers")
+
     runtimeOnly("com.h2database:h2")
 }
