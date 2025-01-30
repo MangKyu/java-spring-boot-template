@@ -9,6 +9,8 @@ tasks {
 }
 
 dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation("io.micrometer:micrometer-core")
     implementation("org.springframework.boot:spring-boot-starter-json")
     implementation("com.github.ben-manes.caffeine:caffeine")
 

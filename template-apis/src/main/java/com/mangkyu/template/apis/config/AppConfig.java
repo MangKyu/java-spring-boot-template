@@ -1,10 +1,10 @@
 package com.mangkyu.template.apis.config;
 
-import com.mangkyu.template.core.shared.EnableTemplateConfig;
-import com.mangkyu.template.core.shared.TemplateConfigGroup;
+import com.mangkyu.template.TemplateCoreConfig;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
 @Configuration(proxyBeanMethods = false)
-@EnableTemplateConfig({TemplateConfigGroup.JPA, })
+@Import(TemplateCoreConfig.class)
 class AppConfig {
 }
