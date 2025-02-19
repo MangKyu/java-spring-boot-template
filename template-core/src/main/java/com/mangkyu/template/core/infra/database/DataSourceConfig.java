@@ -12,7 +12,7 @@ import org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy;
 import javax.sql.DataSource;
 import java.util.Map;
 
-
+// https://vladmihalcea.com/read-write-read-only-transaction-routing-spring/
 @Configuration(proxyBeanMethods = false)
 class DataSourceConfig {
 
